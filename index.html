@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/additional-methods.js"></script>
+    
+</head>
+<body>
+<form id="forma" class="form-position" onsubmit="return false;">
+	<h1> Welcome to the test page!</h1>
+	<label>User name:</label>
+	<input type="text" name="firstname" id="firstname" autofocus  placeholder="Enter your name" required maxlength="21">
+	</input><br>
+	<button type="submit"  id="submit" class="open-button" name="submit" disabled onclick="openform()"><strong>Start Chat button</strong></button>
+</form>
+
+<div class="chat-popup" id="chat-form">
+<form class="form-container">
+	
+	<button type="submit" class="btn-cancel cancel" onclick="closeform(), document.location.reload(true)">X</button>
+	<img src="chat.svg">
+	<h2>Chat</h2>
+	
+		<textarea class="thread textareastyle" id="threadp" readonly></textarea>
+	
+	<label for="msg"><strong>Message</strong></label>
+	<textarea class="textareastyle" placeholder="Type message here...  " name="msgarea" id="msgarea" required autofocus></textarea> 
+	<button type="button" id="btn-chat" class="btn" " ><strong>Send</strong></button>
+</form>
+
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
