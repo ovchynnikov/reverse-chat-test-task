@@ -7,5 +7,5 @@ If you try to send the same message, you will see "Sorry, you've already asked t
 
 In version 1.2 were fixed and added:
     1) now in chat window you see your name instead of "You";
-    2) now comparing function block sending of your messages only, not the reverse versions.
-    3) case sensitivity, now it doesn't matter lower or upper case letters in your message -- you won't be able to send the same question 2 times; 
+    2) now "comparing function" blocks messages sended only by you, not the bot's messages (you can send 'hello' and next 'olleh').
+    3) case sensitivity, now it doesn't matter lower or upper case letters in your message - you won't be able to send the same mwssage 2 times; 
